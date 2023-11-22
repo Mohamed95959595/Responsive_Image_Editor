@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="css/awesome.css">
+  <link rel="stylesheet" href="css/framwork.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="section-one">
+      <div class="image">
+        <img alt="">
+        <canvas class="canvas"></canvas>
+      </div>
+      <div class="upload">
+        <label for="upload">Upload</label>
+        <input type="file" id="upload">
+      </div>
+    </div>
+    <div class="section-two">
+      <label for="saturate">saturate</label> <!-- % -->
+      <input type="range" id="saturate" min="0" max="200" value="100">
+
+      <label for="contrast">contrast</label> <!-- % -->
+      <input type="range" id="contrast" min="0" max="200" value="100">
+
+      <label for="brightness">brightness</label> <!-- % -->
+      <input type="range" id="brightness" min="0" max="200" value="100">
+
+      <label for="sepia">sepia</label> <!-- % -->
+      <input type="range" id="sepia" min="0" max="100" value="0">
+
+      <label for="grayscale">grayscale</label> <!-- % -->
+      <input type="range" id="grayscale" min="0" max="100" value="0">
+
+      <label for="blur">blur</label> <!-- px -->
+      <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
+
+      <label for="hue-rotate">hue-rotate</label> <!-- deg -->
+      <input type="range" id="hue-rotate" min="0" max="350" value="0">
+
+      <div class="control-btns">
+        <button class="reset btn-shape">Reset</button>
+        <a class="download btn-shape" download="Image"><i class="fa-solid fa-download"></i>Download</a>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #1160b9;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+  --bg-color: #eeeeee;
+  --family-awesome: "Font Awesome 6 Free";
+  --padding-wedget: 10px;
+  --border-ccc: 1px solid #ccc;
+  --border-ddd: 1px solid #ddd;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: calc(100% - 80px);
+  background-color: #151515;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-one {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one .image {
+  width: 100%;
+  height: 90%;
+}
+
+.section-one .image img,
+.section-one .image .canvas {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.section-one .upload input {
+  display: none;
+}
+
+.section-one .upload label {
+  color: white;
+  padding: 5px 10px;
+  border: 2px dashed white;
+  cursor: pointer;
+}
+
+.section-one .upload label:hover {
+  background-color: var(--blue-color);
+}
+
+.section-two {
+  width: 35%;
+}
+
+.section-two label {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 16px;
+  text-align: end;
+  text-transform: capitalize;
+}
+
+.section-two input {
+  width: 100%;
+  margin-bottom: 25px;
+  direction: rtl;
+  cursor: pointer;
+}
+
+.section-two .control-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.control-btns .reset,
+.control-btns .download {
+  background-color: green;
+  border-radius: 0;
+}
+
+.control-btns .reset:hover,
+.control-btns .download:hover {
+  scale: 1.1;
+}
+
+.download i {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-one {
+    width: 100%;
+  }
+
+  .section-two {
+    width: 90%;
+  }
+
+  .section-two input {
+    margin-bottom: 15px;
+  }
+}
